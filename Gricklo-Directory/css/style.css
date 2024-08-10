@@ -1,0 +1,140 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    /* border: 0; */
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Mulish", sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hover-info:hover{
+    color: #1ABDF0;
+}
+
+/* hero-section */
+.search-placeholder::placeholder{
+    color: white;
+}
+.hero-section{
+    height: 800px;
+    background:linear-gradient(rgba(35, 34, 40, 0.785),rgba(2, 1, 3, 0.785)), url(../images/background/h1_hero.jpg) center/cover no-repeat;
+}
+.hero-content{
+    height: 600px;
+}
+
+.hero-content-input{
+    padding-left: 70px;
+}
+.hero-content-input-span{
+    font-weight: bold;
+    color: black;
+    position: relative;
+    top: 35px;
+    right: 34%;
+}
+.hero-content-btn{
+    padding-top:30PX;
+}
+.hover-hero-anchor{
+    background-image: linear-gradient(rgba(128, 128, 128, 0.537),rgba(128, 128, 128, 0.491));
+}
+.hover-hero-anchor:hover{
+    background-color:#304CBB;
+}
+
+@media (width<=426px){
+    .search-bar{
+        display: none;
+    }
+    .hero-content-btn{
+        width: 100%;
+        padding-left:10%;
+    }
+    .hero-content-input-span{
+        right: 20%;
+    }
+}
+
+/* video-bg */
+
+.video-bg {
+    height: 300px;
+    background: url(../images/background/video-bg.jpg) center/cover no-repeat;
+}
+
+.video-bg a i {
+    color: aliceblue;
+    font-size: 3rem;
+}
+
+.founder-img {
+    width: 10%;
+}
+
+/* how-works-section */
+
+.how-works-section{
+    background-color: #F1F6F9;
+}
+
+.how-works-icons i{
+    font-size: 40px;
+    color: white;
+    background-color: #304CBB;
+}
+
+/* thinks-section */
+
+.thinks-section-span span{
+    font-size: 25px;
+    color: white;
+    position: relative;
+    bottom: 50px;
+    left: 10px;
+}
+.thinks-section-position{
+    position: relative;
+    color: white;
+    bottom: 150px;
+    left: 7px;
+}
+
+.things-section-hover:hover figure img{
+    width: 100%;
+    transform: scale(0.95);
+    transition: all .5s ease-out 0s;
+  }
+
+  .things-section-hover:hover .thinks-section-position,
+  .things-section-hover:hover .thinks-section-span{
+    width: 100%;
+    transform: scale(0.95);
+    transition: all .5s ease-out 0s;
+  }
+
+  /* popular-things-Section */
+
+  .popular-things-close-btn{
+    position: relative;
+    top: 50px;
+    padding: 0 20px 0 20px;
+  }
